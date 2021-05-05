@@ -21,7 +21,7 @@ from PIL import Image
 
 from ocrmypdf.exceptions import MissingDependencyError, SubprocessOutputError
 from ocrmypdf.helpers import Resolution
-from ocrmypdf.subprocess import get_version, run, run_polling_stderr
+from ocrmypdf.sub_process import get_version, run, run_polling_stderr
 
 log = logging.getLogger(__name__)
 

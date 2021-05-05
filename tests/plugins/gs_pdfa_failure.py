@@ -23,7 +23,7 @@ from unittest.mock import patch
 
 from ocrmypdf import hookimpl
 from ocrmypdf.builtin_plugins import ghostscript
-from ocrmypdf.subprocess import run_polling_stderr
+from ocrmypdf.sub_process import run_polling_stderr
 
 
 def run_rig_args(args, **kwargs):

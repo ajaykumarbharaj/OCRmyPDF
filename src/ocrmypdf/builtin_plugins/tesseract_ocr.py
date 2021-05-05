@@ -14,7 +14,7 @@ from ocrmypdf.cli import numeric
 from ocrmypdf.exceptions import MissingDependencyError
 from ocrmypdf.helpers import clamp
 from ocrmypdf.pluginspec import OcrEngine
-from ocrmypdf.subprocess import check_external_program
+from ocrmypdf.sub_process import check_external_program
 
 log = logging.getLogger(__name__)
 

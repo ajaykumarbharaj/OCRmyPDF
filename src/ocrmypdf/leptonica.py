@@ -33,7 +33,7 @@ from ocrmypdf.lib._leptonica import ffi
 logger = logging.getLogger(__name__)
 
 if os.name == 'nt':
-    from ocrmypdf.subprocess._windows import shim_env_path
+    from ocrmypdf.sub_process._windows import shim_env_path
 
     libname = 'liblept-5'
     os.environ['PATH'] = shim_env_path()

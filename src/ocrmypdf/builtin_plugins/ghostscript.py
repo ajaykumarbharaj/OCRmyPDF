@@ -11,7 +11,7 @@ from ocrmypdf import hookimpl
 from ocrmypdf._exec import ghostscript
 from ocrmypdf._validation import HOCR_OK_LANGS
 from ocrmypdf.exceptions import MissingDependencyError
-from ocrmypdf.subprocess import check_external_program
+from ocrmypdf.sub_process import check_external_program
 
 log = logging.getLogger(__name__)
 

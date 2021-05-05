@@ -25,7 +25,7 @@ from ocrmypdf.exceptions import (
     SubprocessOutputError,
     TesseractConfigError,
 )
-from ocrmypdf.subprocess import get_version, run
+from ocrmypdf.sub_process import get_version, run
 
 log = logging.getLogger(__name__)
 

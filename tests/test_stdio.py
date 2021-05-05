@@ -71,7 +71,7 @@ def test_closed_streams(ocrmypdf_exec, resources, outpdf):
         '--plugin',
         'tests/plugins/tesseract_noop.py',
     ]
-    p = Popen(  # pylint: disable=subprocess-popen-preexec-fn
+    p = Popen(  # pylint: disable=sub_process-popen-preexec-fn
         p_args,
         close_fds=True,
         stdout=None,

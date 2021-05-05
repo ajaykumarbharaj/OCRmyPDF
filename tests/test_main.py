@@ -22,7 +22,7 @@ from ocrmypdf._exec import ghostscript, tesseract
 from ocrmypdf.exceptions import ExitCode, MissingDependencyError
 from ocrmypdf.pdfa import file_claims_pdfa
 from ocrmypdf.pdfinfo import Colorspace, Encoding, PdfInfo
-from ocrmypdf.subprocess import get_version
+from ocrmypdf.sub_process import get_version
 
 from .conftest import (
     check_ocrmypdf,

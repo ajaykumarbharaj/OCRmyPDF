@@ -22,8 +22,8 @@ from typing import List, Optional, Tuple, Union
 from PIL import Image
 
 from ocrmypdf.exceptions import MissingDependencyError, SubprocessOutputError
-from ocrmypdf.subprocess import get_version
-from ocrmypdf.subprocess import run as external_run
+from ocrmypdf.sub_process import get_version
+from ocrmypdf.sub_process import run as external_run
 
 DecFloat = Union[Decimal, float]
 

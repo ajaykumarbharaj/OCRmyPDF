@@ -5,7 +5,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
-"""Wrappers to manage subprocess calls"""
+"""Wrappers to manage sub_process calls"""
 
 import logging
 import os
@@ -28,14 +28,14 @@ log = logging.getLogger(__name__)
 
 
 def run(args, *, env=None, logs_errors_to_stdout=False, **kwargs):
-    """Wrapper around :py:func:`subprocess.run`
+    """Wrapper around :py:func:`sub_process.run`
 
-    The main purpose of this wrapper is to log subprocess output in an orderly
-    fashion that indentifies the responsible subprocess. An additional
+    The main purpose of this wrapper is to log sub_process output in an orderly
+    fashion that indentifies the responsible sub_process. An additional
     task is that this function goes to greater lengths to find possible Windows
     locations of our dependencies when they are not on the system PATH.
 
-    Arguments should be identical to ``subprocess.run``, except for following:
+    Arguments should be identical to ``sub_process.run``, except for following:
 
     Arguments:
         logs_errors_to_stdout: If True, indicates that the process writes its error
@@ -66,7 +66,7 @@ def run(args, *, env=None, logs_errors_to_stdout=False, **kwargs):
 
 
 def run_polling_stderr(args, *, callback, check=False, env=None, **kwargs):
-    """Run a process like ``ocrmypdf.subprocess.run``, and poll stderr.
+    """Run a process like ``ocrmypdf.sub_process.run``, and poll stderr.
 
     Every line of produced by stderr will be forwarded to the callback function.
     The intended use is monitoring progress of subprocesses that output their
@@ -105,7 +105,7 @@ def _fix_process_args(args, env, kwargs):
     program = args[0]
 
     if os.name == 'nt':
-        from ocrmypdf.subprocess._windows import fix_windows_args
+        from ocrmypdf.sub_process._windows import fix_windows_args
 
         args = fix_windows_args(program, args, env)
 

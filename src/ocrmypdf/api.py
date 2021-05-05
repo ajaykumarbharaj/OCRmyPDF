@@ -297,7 +297,7 @@ def ocr(  # pylint: disable=unused-argument
         ocrmypdf.PriorOcrFoundError: If the input PDF seems to have OCR or digital
             text already, and settings did not tell us to proceed.
         ocrmypdf.InputFileError: Any other problem with the input file.
-        ocrmypdf.SubprocessOutputError: Any error related to executing a subprocess.
+        ocrmypdf.SubprocessOutputError: Any error related to executing a sub_process.
         ocrmypdf.EncryptedPdfERror: If the input PDF is encrypted (password protected).
             OCRmyPDF does not remove passwords.
         ocrmypdf.TesseractConfigError: If Tesseract reported its configuration was not

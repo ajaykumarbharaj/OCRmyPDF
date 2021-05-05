@@ -32,7 +32,7 @@ from ocrmypdf.helpers import (
     monotonic,
     safe_symlink,
 )
-from ocrmypdf.subprocess import check_external_program
+from ocrmypdf.sub_process import check_external_program
 
 # -------------
 # External dependencies
